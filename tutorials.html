@@ -42,10 +42,57 @@
     <body class="homepage is-preload">
         <div id="page-wrapper">
 
+            
+            <!-- Header -->
+                <div>
+
+
+                        <nav id="nav">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li>
+                                    <a href="index.html#banner">About</a>
+                                    <ul>
+                                        <li><a href="index.html#banner" class="scrolly">Company</a></li>
+                                        <li><a href="index.html#technical" class="scrolly">Technical Team</a></li>
+                                        <li><a href="index.html#corporate" class="scrolly">Corporate Team</a></li>
+                                        <li><a href="https://www.spm1d.org/References.html" target="_blank"  class="scrolly">References</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="products.html">Products</a>
+                                    <ul>
+                                        <li><a href="products.html#main">Jiku Core</a></li>
+                                        <li><a href="products.html#products-jiku-paid">Jiku UI</a></li>
+                                        <!-- <li><a href="products.html#products-jiku-paid">Jiku Cloud</a></li>
+                                        <li><a href="products.html#products-jiku-paid">Jiku Data</a></li> -->
+                                        <li><a href="products.html#products-jiku-paid">Jiku Power1D</a></li>
+                                        <!-- <li><a href="products.html#products-jiku-learn">Jiku WebApps</a></li> -->
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="tutorials.html">Tutorials</a>
+                                    <ul>
+                                        <li><a href="tutorials.html#tutorials-power1d">Jiku Power1D</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="support.html">Support</a>
+                                    <ul>
+                                        <li><a href="support.html#support-free">Free Support</a></li>
+                                        <li><a href="support.html#support-consulting">Consulting</a></li>
+                                        <li><a href="support.html#support-workshops">Workshops</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        
+                        
             <!-- Banner -->
                 <section id="banner">
                     <header>
-                        <h2>Jiku Power1D - Tutorials</h2>
+                        <h2>Tutorials - Jiku Power1D</h2>
                         
                         
                         <div id="player"></div>
@@ -60,7 +107,7 @@
                             player = new YT.Player('player', {
                               height: '390',
                               width: '640',
-                              videoId: '2OxYqbW7n5Y',
+                              videoId: 'OXbIt0cqzfI',
                               events: {
                                 'onReady': onPlayerReady,
                                 'onStateChange': onPlayerStateChange
@@ -84,100 +131,36 @@
                         
                         
                         
-                        <p>Quick start</p>
+                        
 
 
                     </header>
                 </section>
+                
+                
 
             <!-- Carousel -->
                 <section class="carousel">
+                    <h3>Quick start</h3>
                     <div class="reel">
-
-                        <article>
-                            <a class="image featured"><img src="images/segmentation.jpg" alt="" onclick="javascript:loadVideo('2OxYqbW7n5Y');"/></a>
-                                <h3><a >Default models</a></h3>
-                            </header>
-                        </article>
-
-                        <article>
-                            <!-- <a class="image featured"><img src="images/registration.jpg" alt="" onclick="myFunction()"/></a> -->
-                            <a class="image featured"><img src="images/registration.jpg" alt="" onclick="javascript:loadVideo('YBiQmvoMAVI');"/></a>
-                            <!-- <a class="image featured"><img src="images/registration.jpg" alt="" href="javascript:loadVideo('kGIjetX6TBk');"/></a> -->
-                            
-                            
-                            
-                            
-                            
-                            <header>
-                                <h3><a >Experimental data</a></h3>
-                            </header>
-                        </article>
-
-                        <article>
-                            <a class="image featured"><img src="images/hypothesistesting.jpg" alt="" /></a>
-                            <header>
-                                <h3><a >Custom models</a></h3>
-                            </header>
-                        </article>
-
-
+                        <h4>Default models</h4>
+                        <h4>Experimental Data</h4>
+                        <h4>Custom models</h4>
                     </div>
                 </section>
 
 
-
-
-
-            <!-- Banner -->
-                <section id="banner">
-                    <header>
-                        <p>Overview</p>
-
-
-                    </header>
-                </section>
-
             <!-- Carousel -->
                 <section class="carousel">
+                    <h3>Overview</h3>
                     <div class="reel">
-
-                        <article>
-                            <a class="image featured"><img src="images/segmentation.jpg" alt="" /></a>
-                            <header>
-                                <h3><a >What is Jiku Power1D?</a></h3>
-                            </header>
-                        </article>
-
-                        <article>
-                            <a class="image featured"><img src="images/registration.jpg" alt="" /></a>
-                            <header>
-                                <h3><a >Compact / Full Layout</a></h3>
-                            </header>
-                            <!-- <p>Powerfully align complex geometries to common domains.</p> -->
-                        </article>
-
-                        <article>
-                            <a class="image featured"><img src="images/hypothesistesting.jpg" alt="" /></a>
-                            <header>
-                                <h3><a >Dark Mode / Light Mode</a></h3>
-                            </header>
-                            <!-- <p>Conduct formalized continuum-level hypothesis testing.</p> -->
-                        </article>
-
-                        <article>
-                            <a class="image featured"><img src="images/hypothesistesting.jpg" alt="" /></a>
-                            <header>
-                                <h3><a >Getting Support</a></h3>
-                            </header>
-                            <!-- <p>Conduct formalized continuum-level hypothesis testing.</p> -->
-                        </article>
-
-
+                        <h4 onclick="javascript:loadVideo('OXbIt0cqzfI');">Overview</h4>
+                        <h4 onclick="javascript:loadVideo('rHw_Cq9mbTg');">Layouts: Compact / Full</h4>
+                        <h4 onclick="javascript:loadVideo('KLOh6oJyqFU');">Dark/Light Modes</h4>
+                        <h4>Support</h4>
                     </div>
                 </section>
-                
-                
+                        
 
 
             <!-- Footer -->
