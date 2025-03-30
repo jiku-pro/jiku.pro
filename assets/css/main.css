@@ -2784,6 +2784,27 @@ input, select, textarea {
 				text-align: center;
 			}
 
+        .carousel h3 {
+            padding: 0 0 1em 0;
+            align: center;
+            text-align: center;
+        }
+
+		.carousel h4 {
+			display: inline-block;
+			width: 18em;
+			background: #fff;
+			text-align: center;
+			padding: 1em 1em 1em 1em;
+			margin: 0 0 0 0;
+			white-space: normal;
+			opacity: 1.0;
+			-moz-transition: opacity 0.75s ease-in-out;
+			-webkit-transition: opacity 0.75s ease-in-out;
+			-ms-transition: opacity 0.75s ease-in-out;
+			transition: opacity 0.75s ease-in-out;
+		}
+
 /* Wide */
 
 	@media screen and (max-width: 1680px) {

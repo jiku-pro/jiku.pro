@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- <style>
+    .popup .popuptext {
+        visibility: hidden;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -80px;
+    }
+    .popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+    }
+    @-webkit-keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity:1 ;}
+    }
+</style> -->
+
+
+    <head>
+        <title>Jiku - Tutorials</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    </head>
+    <body class="homepage is-preload">
+        <div id="page-wrapper">
+
+            
+            <!-- Header -->
+                <div>
+
+
+                        <nav id="nav">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li>
+                                    <a href="index.html#banner">About</a>
+                                    <ul>
+                                        <li><a href="index.html#banner" class="scrolly">Company</a></li>
+                                        <li><a href="index.html#technical" class="scrolly">Technical Team</a></li>
+                                        <li><a href="index.html#corporate" class="scrolly">Corporate Team</a></li>
+                                        <li><a href="https://www.spm1d.org/References.html" target="_blank"  class="scrolly">References</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="products.html">Products</a>
+                                    <ul>
+                                        <li><a href="jikucore.html">Jiku Core</a></li>
+                                        <li><a href="products.html#products-jiku-paid">Jiku UI</a></li>
+                                        <li><a href="power1d.html">Jiku Power1D</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="tutorials.html">Tutorials</a>
+                                    <ul>
+                                        <li><a href="tutorials.html#tutorials-power1d">Jiku Power1D</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="support.html">Support</a>
+                                    <ul>
+                                        <li><a href="support.html#support-free">Free Support</a></li>
+                                        <li><a href="support.html#support-consulting">Consulting</a></li>
+                                        <li><a href="support.html#support-workshops">Workshops</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        
+                        
+            <!-- Banner -->
+                <section id="banner">
+                    <header>
+                        <h2>Tutorials - Jiku Power1D</h2>
+                        
+                        
+                        <div id="player"></div>
+                        <script>
+                        var tag = document.createElement('script');
+                        tag.src = "http://www.youtube.com/player_api";
+                        var firstScriptTag = document.getElementsByTagName('script')[0];
+                        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                        var done = false;
+                        var player;
+                        function onYouTubePlayerAPIReady() {
+                            player = new YT.Player('player', {
+                              height: '390',
+                              width: '640',
+                              videoId: 'OXbIt0cqzfI',
+                              events: {
+                                'onReady': onPlayerReady,
+                                'onStateChange': onPlayerStateChange
+                              }
+                            });
+                        }
+                        function onPlayerReady(evt) {
+                        }
+                        function onPlayerStateChange(evt) {
+                            if (evt.data == YT.PlayerState.PLAYING && !done) {
+                                done = true;
+                            }
+                        }
+                        function stopVideo() {
+                            player.stopVideo();
+                        }
+                        function loadVideo(videoID) {
+                          if(player) { player.loadVideoById(videoID); }
+                        }
+                        </script>
+                        
+                        
+                        
+                        
+
+
+                    </header>
+                </section>
+                
+                
+
+            <!-- Carousel -->
+                <section class="carousel">
+                    <h3>Quick start</h3>
+                    <div class="reel">
+                        <h4 onclick="javascript:loadVideo('jXesjOpuXDw');">Default models</h4>
+                        <h4>Experimental Data</h4>
+                        <h4>Custom models</h4>
+                    </div>
+                </section>
+
+
+            <!-- Carousel -->
+                <section class="carousel">
+                    <h3>Overview</h3>
+                    <div class="reel">
+                        <h4 onclick="javascript:loadVideo('OXbIt0cqzfI');">Overview</h4>
+                        <h4 onclick="javascript:loadVideo('rHw_Cq9mbTg');">Layouts: Compact / Full</h4>
+                        <h4 onclick="javascript:loadVideo('KLOh6oJyqFU');">Dark/Light Modes</h4>
+                        <h4 onclick="javascript:loadVideo('HEGRChDnsyA');">Support</h4>
+                    </div>
+                </section>
+                        
+
+
+            <!-- Footer -->
+                <div id="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+
+                                <!-- Contact -->
+                                    <section class="contact">
+                                        <br>
+                                        <footer>
+                                            <a href="mailto:jiku.pro.adm@gmail.com" class="button">Email us</a>
+                                        </footer>
+                                        <br>
+                                        <br>
+                                        <!-- <p>Our Academic Profile</p> -->
+                                        <ul class="icons">
+                                            <!-- <li><a class="ai ai-academia ai-2x" href="https://nanyang.academia.edu/CyrilDonnelly" target="_blank"></a></li> -->
+                                            <li><a class="fab fa-github fa-2x" href="https://github.com/jiku-pro" target="_blank"></a></li>
+                                            <li><a class="ai ai-google-scholar-square ai-2x" href="https://scholar.google.com/citations?user=QxNCBYoAAAAJ&hl=en&oi=sra" target="_blank"></a></li>
+                                            <li><a class="ai ai-researchgate ai-2x" href="https://www.researchgate.net/profile/Todd-Pataky" target="_blank"></a></li>
+                                            <li><a class="ai ai-orcid ai-2x" href="https://orcid.org/0000-0002-8292-7189" target="_blank"></a></li>
+                                            <li><a class="ai ai-osf ai-2x" href="https://osf.io/9vgcr/" target="_blank"></a></li>
+                                        </ul>
+                                    </section>
+
+                                <!-- Copyright -->
+                                    <div class="copyright">
+                                        <ul class="menu">
+                                            <li>&copy; Jiku Pte Ltd 2025, All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                                        </ul>
+                                    </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.dropotron.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
