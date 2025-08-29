@@ -30,6 +30,7 @@
 					$body.removeClass('is-preload');
 				}, 100);
 			});
+			
 
 		// ... stopped resizing.
 			var resizeTimeout;
@@ -78,10 +79,10 @@
 				$sidebar.addClass('inactive');
 			});
 
-			breakpoints.on('>large', function() {
+			/*.on('>large', function() {
 				$sidebar.removeClass('inactive');
 			});
-
+*/
 		// Hack: Workaround for Chrome/Android scrollbar position bug.
 			if (browser.os == 'android'
 			&&	browser.name == 'chrome')
