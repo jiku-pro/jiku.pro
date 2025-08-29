@@ -26,6 +26,7 @@
 
 		// ... loaded.
 			$window.on('load', function() {
+                $sidebar.toggleClass('inactive');
 				window.setTimeout(function() {
 					$body.removeClass('is-preload');
 				}, 100);
@@ -35,7 +36,8 @@
 			var resizeTimeout;
 
 			$window.on('resize', function() {
-
+                
+                
 				// Mark as resizing.
 					$body.addClass('is-resizing');
 
