@@ -6,17 +6,17 @@
 -->
 <html>
     <head>
-        <title>JIKU Support</title>
+        <title>JIKU</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <style>
-.button.active {
-  background-color: #e0e0e0;
-  color: #1a237e !important;
-  border: 2px solid #bdbdbd;
-  box-shadow: 0 2px 8px rgba(26,35,126,0.08);
-}
+            .button.active {
+                background-color: #e0e0e0;
+                color: #1a237e !important;
+                border: 2px solid #bdbdbd;
+                box-shadow: 0 2px 8px rgba(26,35,126,0.08);
+            }
         </style>
     </head>
     <body class="is-preload">
@@ -40,70 +40,52 @@
                     <section id="banner">
                         <div class="content">
                             <header>
-                                <h1>Support</h1>
-                                <p>How can we help you?</p>
+                                <h1>Jiku Power1D</h1>
+                                <p>Statistical power analysis...<br>for one-dimensional data</p>
                             </header>
+                            <p>
+                                Power1D is a tool to conduct power analysis on continuous 1D datasets (time series, motion curves, or biomechanical signals). 
+                                Ease of use, sample size estimation, and effect size visualization.
+                            </p>
+                            <ul class="actions">
+                                <li>
+                                    <a href="https://github.com/jiku-pro/releases-power1d/releases" class="button big" target="_blank" rel="noopener">Download</a>
+                                </li>
+                                <li>
+                                    <a href="https://buy.stripe.com/28o6p64IIeb08co9AA" class="button big" target="_blank" rel="noopener">Purchase</a>
+                                </li>
+                            </ul>
+                            <div class="download-logos" style="margin-top: 2em; display: flex; gap: 2em; align-items: center;">
+                                <img src="images/Windows.svg" alt="Logo 1" style="height: 48px;">
+                                <img src="images/MACOS_Apple.svg" alt="Logo 2" style="height: 48px;">
+                                <img src="images/Linux_Tux.svg" alt="Logo 3" style="height: 48px;">
+                            </div>
                         </div>
+                        <span class="image object">
+                            <img src="images/1_create_models.gif" alt="" style="width: 100%; height: auto;" />
+                        </span>
                     </section>
 
-                    <!-- Support Section -->
-                    <section id="support">
+                    <!-- Section -->
+                    <section id="features-section">
                         <header class="major">
-                            <h2>Support</h2>
+                            <h2>Features</h2>
                         </header>
-                        <div class="features">
+                        <div class="posts">
                             <article>
-                                <span class="icon fa-heart"></span>
-                                <div class="content">
-                                    <h3>Free support</h3>
-                                    <p>
-                                        Free support is available on 
-                                        <a href="https://github.com/jiku-pro/jiku-pro-support" target="_blank" rel="noopener">GitHub</a>.
-                                    </p>
-                                </div>
+                                <a href="#" class="image"><img src="images/4_quick_drop.gif" alt="" /></a>
+                                <h3>Drag on drop CSV files</h3>
+                                <p>Automate post hoc power analysis being a drag away.</p>
                             </article>
                             <article>
-                                <span class="icon solid fa-comments"></span>
-                                <div class="content">
-                                    <h3>Consulting</h3>
-                                    <ul>
-                                        <li>We offer paid consulting services pertaining to all aspects of Jiku Pro products.</li>
-                                        <li>Cost: minimum $500 USD plus an hourly rate that varies depending on the nature of your project.</li>
-                                        <li>
-                                            For a consulting quote please contact 
-                                            <a href="mailto:consulting@jiku.pro">consulting@jiku.pro</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <a href="#" class="image"><img src="images/3_sample_size_mode.gif" alt="" /></a>
+                                <h3>Sample-size mode</h3>
+                                <p>Run to swiftly plan your data collection and experiments.</p>
                             </article>
                             <article>
-                                <span class="icon solid fa-users"></span>
-                                <div class="content">
-                                    <h3>Workshops</h3>
-                                    <p>
-                                        Jiku offers both online and in-person educational workshops regarding all Jiku Core theory, including:
-                                    </p>
-                                    <ul>
-                                        <li>Data processing</li>
-                                        <li>Statistical analysis</li>
-                                        <li>General programming</li>
-                                        <li>Jiku customization</li>
-                                    </ul>
-                                    <p>
-                                        Workshop details are available at 
-                                        <a href="https://spm1d.org" target="_blank" rel="noopener">spm1d.org</a>
-                                    </p>
-                                </div>
-                            </article>
-                            <article>
-                                <span class="icon solid fa-cube"></span>
-                                <div class="content">
-                                    <h3>JikuCore</h3>
-                                    <p>
-                                        For more information, visit 
-                                        <a href="https://jiku-core.org/" target="_blank" rel="noopener">JikuCore</a>.
-                                    </p>
-                                </div>
+                                <a href="#" class="image"><img src="images/2_conduct_power_analysis.gif" alt="" /></a>
+                                <h3>Conduct power analysis</h3>
+                                <p>Robustly power 1d data collection.</p>
                             </article>
                         </div>
                     </section>
@@ -141,7 +123,6 @@
                     </footer>
                 </div>
             </div>
-
         </div>
 
         <!-- Scripts -->
@@ -151,10 +132,9 @@
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
         <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("sidebar").classList.add("inactive");
-  });
-</script>
-
+            document.addEventListener("DOMContentLoaded", function() {
+                document.getElementById("sidebar").classList.add("inactive");
+            });
+        </script>
     </body>
 </html>

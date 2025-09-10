@@ -89,354 +89,53 @@
 									</div>
 								</section>
 
-								<!-- Section -->
-<!--
-								<section id="tutorial-section">
-  <header class="major">
-    <h2>Tutorial</h2>
-  </header>
-  <div style="display: flex; gap: 2em; align-items: flex-start;">
-    <div>
-      <button id="btn-getting-started" class="button" type="button" style="width: 100%; text-align: left; margin-bottom: 0.5em;">
-        Getting started &#9662;
-      </button>
-      <div id="getting-started-group" style="display: none; margin-bottom: 1em;">
-        <button id="btn-overview" class="button active" type="button" style="margin-bottom: 0.5em;">Overview</button>
-        <button id="btn-trial" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Trial license</button>
-        <button id="btn-purchase-license" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Purchase license</button>
-        <button id="btn-importing-experimental-data" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Importing experimental data</button>
-      </div>
-      <button id="btn-data-models" class="button" type="button" style="width: 100%; text-align: left; margin-bottom: 0.5em;">
-        Data models &#9662;
-      </button>
-      <div id="data-models-group" style="display: none; margin-bottom: 1em;">
-        <button id="btn-data-model-overview" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Data models overview</button>
-        <button id="btn-default-models" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Default models</button>
-        <button id="btn-custom-models" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Custom models</button>
-        <button id="btn-templates" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Templates</button>
-        <button id="btn-import-data" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Import data</button>
-        <button id="btn-deleting-samples" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Deleting samples</button>
-      </div>
-      <button id="btn-analysis" class="button" type="button" style="width: 100%; text-align: left; margin-bottom: 0.5em;">
-        Analysis &#9662;
-      </button>
-      <div id="analysis-group" style="display: none; margin-bottom: 1em;">
-        <button id="btn-power-mode" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Power mode</button>
-        <button id="btn-sample-size-mode" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Sample size mode</button>
-      </div>
-      <button id="btn-results" class="button" type="button" style="width: 100%; text-align: left; margin-bottom: 0.5em;">
-        Results &#9662;
-      </button>
-      <div id="results-group" style="display: none; margin-bottom: 1em;">
-        <button id="btn-main-results" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Main results</button>
-        <button id="btn-distribution" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Distribution</button>
-        <button id="btn-saving-figures" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Saving figures</button>
-        <button id="btn-exporting-results" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Exporting results</button>
-      </div>
-      <button id="btn-other-topics" class="button" type="button" style="width: 100%; text-align: left; margin-bottom: 0.5em;">
-        Other topics &#9662;
-      </button>
-      <div id="other-topics-group" style="display: none; margin-bottom: 1em;">
-        <button id="btn-post-hoc-analysis" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Post hoc analysis</button>
-        <button id="btn-layouts" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Layouts</button>
-        <button id="btn-dark-mode" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Dark mode</button>
-        <button id="btn-support" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Support</button>
-      </div>
-    </div>
-    <div id="video-area" style="flex: 1; max-width: 600px; min-width: 320px;">
-      <iframe id="tutorial-video"
-        src="https://www.youtube.com/embed/OXbIt0cqzfI"
-        frameborder="0"
-        allowfullscreen
-        style="width: 100%; height: 340px; border-radius: 0.5em;">
-      </iframe>
-    </div>
-  </div>
-</section>
-
-<script>
-  // Expand/collapse Getting Started group
-  const btnGettingStarted = document.getElementById('btn-getting-started');
-  const gettingStartedGroup = document.getElementById('getting-started-group');
-  let gettingStartedOpen = false;
-  btnGettingStarted.onclick = function() {
-    gettingStartedOpen = !gettingStartedOpen;
-    gettingStartedGroup.style.display = gettingStartedOpen ? "block" : "none";
-    btnGettingStarted.innerHTML = gettingStartedOpen ? 'Getting started &#9652;' : 'Getting started &#9662;';
-  };
-
-  // Expand/collapse Data Models group
-  const btnDataModels = document.getElementById('btn-data-models');
-  const dataModelsGroup = document.getElementById('data-models-group');
-  let dataModelsOpen = false;
-  btnDataModels.onclick = function() {
-    dataModelsOpen = !dataModelsOpen;
-    dataModelsGroup.style.display = dataModelsOpen ? "block" : "none";
-    btnDataModels.innerHTML = dataModelsOpen ? 'Data models &#9652;' : 'Data models &#9662;';
-  };
-
-  // Expand/collapse Analysis group
-  const btnAnalysis = document.getElementById('btn-analysis');
-  const analysisGroup = document.getElementById('analysis-group');
-  let analysisOpen = false;
-  btnAnalysis.onclick = function() {
-    analysisOpen = !analysisOpen;
-    analysisGroup.style.display = analysisOpen ? "block" : "none";
-    btnAnalysis.innerHTML = analysisOpen ? 'Analysis &#9652;' : 'Analysis &#9662;';
-  };
-
-  // Expand/collapse Results group
-  const btnResults = document.getElementById('btn-results');
-  const resultsGroup = document.getElementById('results-group');
-  let resultsOpen = false;
-  btnResults.onclick = function() {
-    resultsOpen = !resultsOpen;
-    resultsGroup.style.display = resultsOpen ? "block" : "none";
-    btnResults.innerHTML = resultsOpen ? 'Results &#9652;' : 'Results &#9662;';
-  };
-
-  // Expand/collapse Other Topics group
-  const btnOtherTopics = document.getElementById('btn-other-topics');
-  const otherTopicsGroup = document.getElementById('other-topics-group');
-  let otherTopicsOpen = false;
-  btnOtherTopics.onclick = function() {
-    otherTopicsOpen = !otherTopicsOpen;
-    otherTopicsGroup.style.display = otherTopicsOpen ? "block" : "none";
-    btnOtherTopics.innerHTML = otherTopicsOpen ? 'Other topics &#9652;' : 'Other topics &#9662;';
-  };
-
-  // Video buttons
-  const btnOverview = document.getElementById('btn-overview');
-  const btnTrial = document.getElementById('btn-trial');
-  const btnPurchaseLicense = document.getElementById('btn-purchase-license');
-  const btnImportingExperimentalData = document.getElementById('btn-importing-experimental-data');
-  const btnDataModelOverview = document.getElementById('btn-data-model-overview');
-  const btnDefaultModels = document.getElementById('btn-default-models');
-  const btnCustomModels = document.getElementById('btn-custom-models');
-  const btnTemplates = document.getElementById('btn-templates');
-  const btnImportData = document.getElementById('btn-import-data');
-  const btnDeletingSamples = document.getElementById('btn-deleting-samples');
-  const btnPowerMode = document.getElementById('btn-power-mode');
-  const btnSampleSizeMode = document.getElementById('btn-sample-size-mode');
-  const btnDistribution = document.getElementById('btn-distribution');
-  const btnSavingFigures = document.getElementById('btn-saving-figures');
-  const btnExportingResults = document.getElementById('btn-exporting-results');
-  const btnMainResults = document.getElementById('btn-main-results');
-  const btnPostHocAnalysis = document.getElementById('btn-post-hoc-analysis');
-  const btnLayouts = document.getElementById('btn-layouts');
-  const btnDarkMode = document.getElementById('btn-dark-mode');
-  const btnSupport = document.getElementById('btn-support');
-  const tutorialVideo = document.getElementById('tutorial-video');
-
-  function setActive(btn) {
-  [
-    btnOverview, btnTrial, btnPurchaseLicense, btnImportingExperimentalData,
-    btnDataModelOverview, btnDefaultModels, btnCustomModels, btnTemplates, btnImportData, btnDeletingSamples,
-    btnPowerMode, btnSampleSizeMode, btnMainResults, btnDistribution, btnSavingFigures, btnExportingResults, btnPostHocAnalysis,
-    btnLayouts, btnDarkMode, btnSupport
-  ].forEach(b => b && b.classList.remove('active'));
-  btn.classList.add('active');
-}
-
-  if (btnOverview) btnOverview.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/OXbIt0cqzfI";
-    setActive(btnOverview);
-  };
-  if (btnTrial) btnTrial.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/olCqdxPrKT8";
-    setActive(btnTrial);
-  };
-  if (btnPurchaseLicense) btnPurchaseLicense.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/NojwMXa_Yr4";
-    setActive(btnPurchaseLicense);
-  };
-  if (btnImportingExperimentalData) btnImportingExperimentalData.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/51bshjT0E_k";
-    setActive(btnImportingExperimentalData);
-  };
-  if (btnDataModelOverview) btnDataModelOverview.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/TEeC8DtO93M";
-    setActive(btnDataModelOverview);
-  };
-  if (btnDefaultModels) btnDefaultModels.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/jXesjOpuXDw";
-    setActive(btnDefaultModels);
-  };
-  if (btnCustomModels) btnCustomModels.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/F7q2pOJL9go";
-    setActive(btnCustomModels);
-  };
-  if (btnTemplates) btnTemplates.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/lgRVx3xfy5c";
-    setActive(btnTemplates);
-  };
-  if (btnImportData) btnImportData.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/sX4YwXu6Nps";
-    setActive(btnImportData);
-  };
-  if (btnDeletingSamples) btnDeletingSamples.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/pYCU_IpRLq4";
-    setActive(btnDeletingSamples);
-  }
-  if (btnPowerMode) btnPowerMode.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/olCqdxPrKT8";
-    setActive(btnPowerMode);
-  };
-  if (btnSampleSizeMode) btnSampleSizeMode.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/Uwmn2HHJ5DI";
-    setActive(btnSampleSizeMode);
-  };
-  if (btnDistribution) btnDistribution.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/JNHjx2lTpjQ";
-    setActive(btnDistribution);
-  };
-  if (btnSavingFigures) btnSavingFigures.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/Box9KK4mHhs";
-    setActive(btnSavingFigures);
-  };
-  if (btnExportingResults) btnExportingResults.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/2WENDX0MRpk";
-    setActive(btnExportingResults);
-  };
-  if (btnMainResults) btnMainResults.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/watch?v=VaFwHn3zPgU"; 
-    setActive(btnMainResults);
-  };
-  if (btnPostHocAnalysis) btnPostHocAnalysis.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/watch?v=m4Ml9yFDurg";
-    setActive(btnPostHocAnalysis);
-  };
-  if (btnLayouts) btnLayouts.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/rHw_Cq9mbTg";
-    setActive(btnLayouts);
-  };
-  if (btnDarkMode) btnDarkMode.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/KLOh6oJyqFU";
-    setActive(btnDarkMode);
-  };
-  if (btnSupport) btnSupport.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/HEGRChDnsyA";
-    setActive(btnSupport);
-  };
-</script>
--->
-
-							<!-- Section -->
-							<!--
-              <section>
-									<header class="major">
-									<section id="support"></section>
-										<h2>Support</h2>
-									</header>
-									<div class="features">
-										<article>
-											<span class="icon fa-heart"></span>
-											<div class="content">
-												<h3>Free support</h3>
-												<p>Free support is available on GitHub.</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-comments"></span>
-											<div class="content">
-												<h3>Consulting</h3>
-												<li>We offer paid consulting services pertaining to all aspects of Jiku Pro products.</li>
-												<li>Cost: minimum $500 USD plus an hourly rate that varies depending on the nature of your project.</li>
-												<li>For a consulting quote please contact consulting@jiku.pro</li>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-users"></span>
-											<div class="content">
-												<h3>Workshops</h3>
-												<p>Jiku offers both online and in-person educational workshops regarding all Jiku Core theory, including:</p>
-													<li>Data processing</li>
-													<li>Statistical analysis</li>
-													<li>General programming</li>
-													<li>Jiku customization</li>
-												<p>Workshop details are available at spm1d.org</p>
-											</div>
-										</article>
-									</div>
-								</section>
-              
-
 						</div>
 					</div>
 
-				<!-- Sidebar -->
-					<div id="sidebar" class="inactive">
-						<div class="inner">
+            <!-- Sidebar -->
+            <div id="sidebar" class="inactive">
+                <div class="inner">
+                    <!-- Menu -->
+                    <nav id="menu">
+                        <header class="major">
+                            <h2>Menu</h2>
+                        </header>
+                        <ul>
+                            <li><a href="index.html">Top</a></li>
+                            <li>
+                                <a href="products.html">Products</a>
+                                <ul style="display: block;">
+                                    <li><a href="index.html" target="_blank" rel="noopener">Jiku Power1D</a></li>
+                                    <li><a href="https://jiku-core.org/" target="_blank" rel="noopener">Jiku Core</a></li>
+                                    <li><a href="https://jiku.pro/products.html" target="_blank" rel="noopener">Jiku UI</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="tutorials.html">Tutorials</a></li>
+                            <li><a href="support.html">Support</a></li>
+                            <li><a href="company.html">Company info</a></li>
+                        </ul>
+                    </nav>
 
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Top</a></li>
-										<li>
-											<span class="opener">Products</span>
-											<ul>
-												<li><a href="index.html" target="_blank" rel="noopener">Jiku Power1D</a></li>
-												<li><a href="https://jiku-core.org/" target="_blank" rel="noopener">Jiku Core</a></li>
-												<li><a href="https://jiku.pro/products.html" target="_blank" rel="noopener">Jiku UI</a></li>
-                      </ul>
-										</li>
-										<li><a href="tutorials.html">Tutorials</a></li>
-										<li><a href="support.html">Support</a></li>
-										<li><a href="company.html">Company info</a></li>
-									</ul>
-								</nav>
-
-							
-							<!-- Section -->
-							<!--	<section>
-									<header class="major">
-										<h2>Ante interdum</h2>
-									</header>
-									<div class="mini-posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-									</div>
-									<ul class="actions">
-										<li><a href="#" class="button">More</a></li>
-									</ul>
-								</section>
-							-->
-							
-
-							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; Jiku Pro Pty Ltd 2025. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-								</footer>
-
-						</div>
-					</div>
+                    <!-- Footer -->
+                    <footer id="footer">
+                        <p class="copyright">&copy; Jiku Pro Pty Ltd 2025. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                    </footer>
+                </div>
+            </div>
 
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("sidebar").classList.add("inactive");
-  });
-</script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				document.getElementById("sidebar").classList.add("inactive");
+			});
+		</script>
 
 	</body>
 </html>
