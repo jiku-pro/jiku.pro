@@ -1248,15 +1248,24 @@ input[type="radio"] + label:before {
 a.image {
   overflow: hidden; }
   a.image img {
-    -moz-transition: -moz-transform 0.2s ease;
-    -webkit-transition: -webkit-transform 0.2s ease;
-    -ms-transition: -ms-transform 0.2s ease;
-    transition: transform 0.2s ease; }
+    /* Disable hover zoom: no transform and no transition so gifs stay static on hover */
+    -moz-transition: none;
+    -webkit-transition: none;
+    -ms-transition: none;
+    transition: none;
+    -moz-transform: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
   a.image:hover img {
-    -moz-transform: scale(1.075);
-    -webkit-transform: scale(1.075);
-    -ms-transform: scale(1.075);
-    transform: scale(1.075); }
+    /* Ensure hover doesn't apply any scaling */
+    -moz-transform: none !important;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
+    transition: none !important;
+  }
 
 /* List */
 ol {
@@ -2077,36 +2086,53 @@ button,
   display: -ms-flex;
   display: flex;
   border-bottom: solid 5px #1a237e;
-  padding: 6em 0 1em 0;
-  position: relative; }
-  #header > * {
-    -moz-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    margin-bottom: 0; }
+  padding: 2.5em 0 1em 0; /* reduced from 6em */
+  position: relative;
+}
+
+/* Prevent header children from stretching full width so centering works predictably */
+#header > * {
+  flex: none;
+  margin-bottom: 0;
+}
+
+#header .logo {
+  border-bottom: 0;
+  color: inherit;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.125em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#header .icons {
+  text-align: right;
+}
+
+@media screen and (max-width: 1680px) {
+  #header {
+    padding-top: 2em;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #header {
+    padding-top: 2.5em;
+  }
   #header .logo {
-    border-bottom: 0;
-    color: inherit;
-    font-family: "Roboto Slab", serif;
-    font-size: 1.125em; }
+    font-size: 1.25em;
+    margin: 0;
+  }
   #header .icons {
-    text-align: right; }
-  @media screen and (max-width: 1680px) {
-    #header {
-      padding-top: 5em; } }
-  @media screen and (max-width: 736px) {
-    #header {
-      padding-top: 6.5em; }
-      #header .logo {
-        font-size: 1.25em;
-        margin: 0; }
-      #header .icons {
-        height: 5em;
-        line-height: 5em;
-        position: absolute;
-        right: -0.5em;
-        top: 0; } }
+    height: 5em;
+    line-height: 5em;
+    position: absolute;
+    right: -0.5em;
+    top: 0;
+  }
+}
 
 /* Banner */
 #banner {
