@@ -47,7 +47,7 @@
         <!-- Video window on top -->
         <div id="video-area" style="width: 100%; max-width: 600px; margin: 0 auto 2em auto;">
             <iframe id="tutorial-video"
-                src="https://www.youtube.com/embed/OXbIt0cqzfI"
+        src="https://www.youtube.com/embed/OXbIt0cqzfI?enablejsapi=1&rel=0"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
@@ -155,6 +155,43 @@
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
         <script>
+  // Load YouTube IFrame API so we can switch videos without changing iframe history
+  (function loadYouTubeAPI(){
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  })();
+
+  let ytPlayer = null;
+  let ytReady = false;
+  let pendingVideoId = null;
+
+  // Called by YouTube API when it's ready
+  window.onYouTubeIframeAPIReady = function() {
+    ytPlayer = new YT.Player('tutorial-video', {
+      events: {
+        'onReady': function() {
+          ytReady = true;
+          if (pendingVideoId) {
+            ytPlayer.loadVideoById(pendingVideoId);
+            ytPlayer.playVideo();
+            pendingVideoId = null;
+          }
+        }
+      }
+    });
+  };
+
+  function playVideoById(videoId) {
+    if (ytReady && ytPlayer && typeof ytPlayer.loadVideoById === 'function') {
+      ytPlayer.loadVideoById(videoId);
+      ytPlayer.playVideo();
+    } else {
+      // Queue until the API/player is ready to avoid iframe navigations that add history
+      pendingVideoId = videoId;
+    }
+  }
   // Expand/collapse Getting Started group
   const btnGettingStarted = document.getElementById('btn-getting-started');
   const gettingStartedGroup = document.getElementById('getting-started-group');
@@ -239,86 +276,86 @@
   }
 
   if (btnOverview) btnOverview.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/OXbIt0cqzfI?rel=0&autoplay=1";
+    playVideoById("OXbIt0cqzfI");
     setActive(btnOverview);
   };
   if (btnTrial) btnTrial.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/olCqdxPrKT8?rel=0&autoplay=1";
+    playVideoById("olCqdxPrKT8");
     setActive(btnTrial);
   };
   if (btnPurchaseLicense) btnPurchaseLicense.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/NojwMXa_Yr4?rel=0&autoplay=1";
+    playVideoById("NojwMXa_Yr4");
     setActive(btnPurchaseLicense);
   };
   if (btnImportingExperimentalData) btnImportingExperimentalData.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/51bshjT0E_k?rel=0&autoplay=1";
+    playVideoById("51bshjT0E_k");
     setActive(btnImportingExperimentalData);
   };
   if (btnDataModelOverview) btnDataModelOverview.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/TEeC8DtO93M?rel=0&autoplay=1";
+    playVideoById("TEeC8DtO93M");
     setActive(btnDataModelOverview);
   };
   if (btnDefaultModels) btnDefaultModels.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/jXesjOpuXDw?rel=0&autoplay=1";
+    playVideoById("jXesjOpuXDw");
     setActive(btnDefaultModels);
   };
   if (btnCustomModels) btnCustomModels.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/F7q2pOJL9go?rel=0&autoplay=1";
+    playVideoById("F7q2pOJL9go");
     setActive(btnCustomModels);
   };
   if (btnTemplates) btnTemplates.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/lgRVx3xfy5c?rel=0&autoplay=1";
+    playVideoById("lgRVx3xfy5c");
     setActive(btnTemplates);
   };
   if (btnImportData) btnImportData.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/sX4YwXu6Nps?rel=0&autoplay=1";
+    playVideoById("sX4YwXu6Nps");
     setActive(btnImportData);
   };
   if (btnDeletingSamples) btnDeletingSamples.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/pYCU_IpRLq4?rel=0&autoplay=1";
+    playVideoById("pYCU_IpRLq4");
     setActive(btnDeletingSamples);
   }
   if (btnPowerMode) btnPowerMode.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/olCqdxPrKT8?rel=0&autoplay=1";
+    playVideoById("olCqdxPrKT8");
     setActive(btnPowerMode);
   };
   if (btnSampleSizeMode) btnSampleSizeMode.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/Uwmn2HHJ5DI?rel=0&autoplay=1";
+    playVideoById("Uwmn2HHJ5DI");
     setActive(btnSampleSizeMode);
   };
   if (btnDistribution) btnDistribution.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/JNHjx2lTpjQ?rel=0&autoplay=1";
+    playVideoById("JNHjx2lTpjQ");
     setActive(btnDistribution);
   };
   if (btnSavingFigures) btnSavingFigures.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/Box9KK4mHhs?rel=0&autoplay=1";
+    playVideoById("Box9KK4mHhs");
     setActive(btnSavingFigures);
   };
   if (btnExportingResults) btnExportingResults.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/2WENDX0MRpk?rel=0&autoplay=1";
+    playVideoById("2WENDX0MRpk");
     setActive(btnExportingResults);
   };
   if (btnMainResults) btnMainResults.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/VaFwHn3zPgU?rel=0&autoplay=1";
+    playVideoById("VaFwHn3zPgU");
     setActive(btnMainResults);
   };
   if (btnPostHocAnalysis) btnPostHocAnalysis.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/m4Ml9yFDurg?rel=0&autoplay=1";
+    playVideoById("m4Ml9yFDurg");
     setActive(btnPostHocAnalysis);
   };
   if (btnLayouts) btnLayouts.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/rHw_Cq9mbTg?rel=0&autoplay=1";
+    playVideoById("rHw_Cq9mbTg");
     setActive(btnLayouts);
   };
   if (btnDarkMode) btnDarkMode.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/KLOh6oJyqFU?rel=0&autoplay=1";
+    playVideoById("KLOh6oJyqFU");
     setActive(btnDarkMode);
   };
   if (btnSupport) btnSupport.onclick = function() {
-    tutorialVideo.src = "https://www.youtube.com/embed/HEGRChDnsyA?rel=0&autoplay=1";
+    playVideoById("HEGRChDnsyA");
     setActive(btnSupport);
   };
--->
+  // Optionally, open Getting Started by default
   // Optionally, open Getting Started by default
   btnGettingStarted.click();
 </script>

@@ -17,6 +17,57 @@
   border: 2px solid #bdbdbd;
   box-shadow: 0 2px 8px rgba(26,35,126,0.08);
 }
+/* Team grid styles */
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    margin: 1em 0 2em 0;
+}
+.team-card {
+    flex: 1 1 260px;
+    max-width: 33%;
+    min-width: 220px;
+    border: 1px solid rgba(210, 215, 217, 0.75);
+    border-radius: 0.5em;
+    padding: 1em;
+    text-align: center;
+    background: #fff;
+}
+.team-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 0.375em;
+    background: #eceff1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 0.75em;
+}
+.team-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.team-card h4 {
+    margin: 0.25em 0 0.25em 0;
+}
+.team-card .role {
+    color: #3d4449;
+    font-weight: 600;
+    margin-bottom: 0.25em;
+}
+.team-card .bio {
+    font-size: 0.95em;
+}
+/* Left-align lists inside team cards (credentials/bullets) */
+.team-card ul {
+    text-align: left;
+    margin: 0.5em 0 0 1em;
+    padding-left: 1em;
+}
         </style>
     </head>
     <body class="is-preload">
@@ -47,6 +98,87 @@
                                 For more information about our paid products, please visit the
                                 <a href="https://jiku.pro/products.html#products-jiku-paid" target="_blank" rel="noopener">Jiku Products page</a>.
                             </p>
+                            <hr>
+                            <h2>Technical Team</h2>
+                            <h3>Over 80 years in academic and business experience.</h3>
+                            <div class="team-grid">
+                                <div class="team-card">
+                                    <div class="team-photo">
+                                        <img src="images/team-tp.jpg" alt="Tod Pataky">
+                                    </div>
+                                    <h4>Tod Pataky, Ph.D.</h4>
+                                    <p class="role">Co-founder &amp; CTO</p>
+                                    <ul>
+                                        <li>Associate Professor, Kyoto University</li>
+                                        <li>Biomechanics & Applied Statistics</li>
+                                        <li>15 years in Open-Source Software</li>
+                                    </ul>
+                                </div>
+
+                                <div class="team-card">
+                                    <div class="team-photo">
+                                        <img src="images/team-sa.jpg" alt="Aravind Sundararajan">
+                                    </div>
+                                    <h4>Aravind Sundararajan, Ph.D.</h4>
+                                    <p class="role">VP of Software Development</p>
+                                    <ul>
+                                        <li>Research Engineer, Elemance USA</li>
+                                        <li>Computational biomechanics</li>
+                                        <li>10 years in Software Consultancy</li>
+                                    </ul>
+                                </div>
+
+                                <div class="team-card">
+                                    <div class="team-photo">
+                                        <img src="images/team-ml.jpg" alt="Mario Lafortune">
+                                    </div>
+                                    <h4>Mario Lafortune, Ph.D.</h4>
+                                    <p class="role">Chairperson</p>
+                                    <ul>
+                                        <li>Former Vice President, Descente Korea</li>
+                                        <li>Former Director of Innovation, NIKE Golf</li>
+                                        <li>25 years in Business Management</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- If you add actual photos, place them at images/team/*.jpg matching the names above -->
+                            
+                            <hr>
+                            <h2>Corporate Team</h2>
+                            <h3>Over 80 years in multinational corporate experience.</h3>
+                            <div class="team-grid">
+                                <div class="team-card">
+                                    <div class="team-photo">
+                                        <img src="images/team-mt.jpg" alt="McGregor Thom">
+                                    </div>
+                                    <h4>McGregor Thom</h4>
+                                    <p class="role">LLB, LLM Solicitor</p>
+                                    <p class="role">Co-founder &amp; Director</p>
+                                    <ul>
+                                        <li>Admitted to Supreme Court of WA and High Court of Australia</li>
+                                        <li>20 Years Corporate/Commercial experience in Australia and the UK</li>
+                                    </ul>
+                                    
+                                </div>
+
+                                <div class="team-card">
+                                    <div class="team-photo">
+                                        <img src="images/team-gb.jpg" alt="Geoffery Boyce">
+                                    </div>
+                                    <h4>Geoffery Boyce</h4>
+                                    <p class="role">CA, BCom</p>
+                                    <p class="role">Company Sectretary</p>
+                                    <ul>
+                                        <li>Director, Boyce Business Consultants</li>
+                                        <li>Institute of Chartered Accountants, Australia</li>
+                                    </ul>
+                                    
+                                </div>
+
+                                
+                            </div>
+
                             <hr>
                             <h3>Contact & Address</h3>
                             <ul>
