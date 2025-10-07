@@ -1,292 +1,141 @@
-<!-- <!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <!--
-    Helios by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-    <head>
-        <title>Jiku Pro - Power1D</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    </head>
-    <body class="right-sidebar is-preload">
-        <div id="page-wrapper">
+	<head>
+		<title>JIKU</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+.button.active {
+  background-color: #e0e0e0;
+  color: #1a237e !important;
+  border: 2px solid #bdbdbd;
+  box-shadow: 0 2px 8px rgba(26,35,126,0.08);
+}
+</style>
+	</head>
+	<body class="is-preload">
 
-        <!-- Nav -->
-            <nav id="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li>
-                        <a href="about.html">About</a>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+    <a href="index.html" class="logo" style="display: flex; align-items: center;">
+        <img src="images/jiku-core-logo.jpg" alt="Logo" style="height: 2.5em; vertical-align: middle; margin-right: 0.75em;">
+        <strong style="font-size: 2.2em; letter-spacing: 0.05em;">JIKU</strong>
+    </a>
+</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>Jiku Power1D</h1>
+											<p>Statistical power analysis...<br>for one-dimensional data</p>
+										</header>
+										<p>Power1D is a tool to conduct power analysis on continuous 1D datasets (time series, motion curves, or biomechanical signals). Ease of use, sample size estimation, and effect size visualization.</p>
+										<ul class="actions">
+    <li>
+        <a href="https://github.com/jiku-pro/releases-power1d/releases" class="button big" target="_blank" rel="noopener">Download</a>
+    </li>
+    <li>
+        <a href="https://buy.stripe.com/28o6p64IIeb08co9AA" class="button big" target="_blank" rel="noopener">Purchase</a>
+    </li>
+</ul>
+										<div class="download-logos" style="margin-top: 2em; display: flex; gap: 2em; align-items: center;">
+											<img src="images/Windows.svg" alt="Logo 1" style="height: 48px;">
+											<img src="images/MACOS_Apple.svg" alt="Logo 2" style="height: 48px;">
+											<img src="images/Linux_Tux.svg" alt="Logo 3" style="height: 48px;">
+										</div>
+									</div>
+									<span class="image object">
+										<img src="images/1_create_models.gif" alt="" style="width: 100%; height: auto;" />
+									</span>
+								</section>
+
+							<!-- Section -->
+								<section id="features-section">
+									<header class="major">
+										<h2>Features</h2>
+									</header>
+									<div class="posts">
+										<article>
+											<a class="image"><img src="images/4_quick_drop.gif" alt="" /></a>
+											<h3>Drag on drop CSV files</h3>
+											<p>Automate post hoc power analysis being a drag away.</p>
+										</article>
+										<article>
+											<a class="image"><img src="images/3_sample_size_mode.gif" alt="" /></a>
+											<h3>Sample-size mode</h3>
+											<p>Run to swiftly plan your data collection and experiments.</p>
+										</article>
+										<article>
+											<a class="image"><img src="images/2_conduct_power_analysis.gif" alt="" /></a>
+											<h3>Conduct power analysis</h3>
+											<p>Robustly power 1d data collection.</p>
+										</article>
+										
+									
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+            <!-- Sidebar -->
+            <div id="sidebar" class="inactive">
+                <div class="inner">
+                    <!-- Menu -->
+                    <nav id="menu">
+                        <header class="major">
+                            <h2>Menu</h2>
+                        </header>
                         <ul>
-                            <li><a href="about.html#banner" class="scrolly">Company</a></li>
-                            <li><a href="about.html#technical" class="scrolly">Technical Team</a></li>
-                            <li><a href="about.html#corporate" class="scrolly">Corporate Team</a></li>
-                            <li><a href="https://www.spm1d.org/References.html" target="_blank"  class="scrolly">References</a></li>
+                            <li><a href="index.html">Top</a></li>
+                            <li>
+                                <a href="products.html">Products</a>
+                                <ul style="display: block;">
+                                    <li><a href="index.html" target="_blank" rel="noopener">Jiku Power1D</a></li>
+                                    <li><a href="https://jiku-core.org/" target="_blank" rel="noopener">Jiku Core</a></li>
+                                    <li><a href="https://jiku.pro/products.html" target="_blank" rel="noopener">Jiku UI</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="tutorials.html">Tutorials</a></li>
+                            <li><a href="support.html">Support</a></li>
+                            <li><a href="company.html">Company info</a></li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="products.html">Products</a>
-                        <ul>
-                            <li><a href="jikucore.html">Jiku Core</a></li>
-                            <li><a href="products.html#products-jiku-paid">Jiku UI</a></li>
-                            <li><a href="power1d.html">Jiku Power1D</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="tutorials.html">Tutorials</a>
-                        <ul>
-                            <li><a href="tutorials.html#tutorials-power1d">Jiku Power1D</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="support.html">Support</a>
-                        <ul>
-                            <li><a href="support.html#support-free">Free Support</a></li>
-                            <li><a href="support.html#support-consulting">Consulting</a></li>
-                            <li><a href="support.html#support-workshops">Workshops</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+                    </nav>
 
-
-            <!-- Main -->
-            <div class="wrapper style1">
-
-                <div class="container">
-                    <div class="row gtr-200">
-                        <div class="col-8 col-12-mobile" id="content">
-
-                            <article id="main">
-                                <header>
-                                    <h2><a>Jiku Power1D</a></h2>
-                                    <h5>Unleash scientific planning possibilities. Robustly power 1D data collection.</h5>
-                                    <!-- <p>
-                                        Jiku provides a range of software and educations services to meet both individuals' and organizations' needs.
-                                    </p> -->
-                                </header>
-                                <a class="image featured"><img src="gif/2_conduct_power_analysis.gif" alt="" /></a>
-                                <!-- <section id="support-free"> -->
-                                    <p>Jiku Power1D supports power and sample size analysis for one-dimensional.</p>
-                                    <p>Available for Windows, Mac and Linux.</p>
-                                    <p>Perpetual license:  purchase once, use forever.</p>
-                                    <br>
-                                    <h4>Drag-and drop CSV files for automated post hoc power analysis:</h4>
-                                    <a class="image featured"><img src="gif/4_quick_drop.gif" alt="" /></a>
-                                    <br>
-                                    <h4>Alternatively start by creating your own data models:</h4>
-                                    <a class="image featured"><img src="gif/1_create_models.gif" alt="" /></a>
-                                    <br>
-                                    <h4>Run in sample-size mode to plan data collection:</h4>
-                                    <a class="image featured"><img src="gif/3_sample_size_mode.gif" alt="" /></a>
-                                <!-- </section> -->
-
-                                <!-- <section id="support-consulting">
-                                    <header>
-                                        <h3>Consulting</h3>
-                                    </header>
-                                    <ul>
-                                        <li>We offer paid consulting services pertaining to all aspects of Jiku Pro products.</li>
-                                        <li>Cost: minimum $500 USD plus an hourly rate that varies depending on the nature of your project. </li>
-                                        <li>For a consulting quote please contact <b><a href="mailto:consulting@jiku.pro">consulting@jiku.pro</a></b></li>
-                                    </ul>
-                                </section>
-                                <br> -->
-                                <!-- <section id="support-workshops">
-                                    <header>
-                                        <h3>Workshops</h3>
-                                    </header>
-                                    <p>
-                                        Jiku offers both online and in-person educational workshops regarding all <b><a href="https://jiku-core.org" target="_blank">Jiku Core</a></b> theory, including:
-                                        <ul>
-                                            <li>Data processing</li>
-                                            <li>Statistical analysis</li>
-                                            <li>General programming</li>
-                                            <li>Jiku customization</li>
-                                        </ul>
-                                    </p>
-                                    <p>
-                                        Workshop details are available at<b> <a href="https://www.spm1d.org/Workshops.html" target="_blank">spm1d.org</a></b>
-                                    </p>
-                                </section> -->
-                            </article>
-                        </div>
-                        <div class="col-4 col-12-mobile" id="sidebar">
-                            <hr class="first" />
-                            <hr />
-                            <section>
-                                <div class="row gtr-50">
-                                    <div class="col-8">
-                                        <h4><a href="https://github.com/jiku-pro/releases-power1d/releases" class="button">Download</a></h4>
-                                    </div>
-                                    <div class="col-8">
-                                        <h4><a href="https://buy.stripe.com/28o6p64IIeb08co9AA">Purchase License</a></h4>
-                                    </div>
-                                        <div class="col-8">
-                                            <h4><a href="tutorials.html">Watch Tutorials</a></h4>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                    <hr />
-
-
+                    <!-- Footer -->
+                    <footer id="footer">
+                        <p class="copyright">&copy; Jiku Pro Pty Ltd 2025. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                    </footer>
+                </div>
             </div>
 
+			</div>
 
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				document.getElementById("sidebar").classList.add("inactive");
+			});
+		</script>
 
-
-
-
-
-            <!-- Footer -->
-            <!-- Footer -->
-                <div id="footer">
-                    <div class="container">
-                        <div class="row">
-
-                            <!-- Tweets -->
-                                <section class="col-4 col-12-mobile">
-                                    <header>
-                                        <h2 class="icon solid fa-scroll circled"><span class="label">Papers</span></h2>
-                                        <h3>Papers</h3>
-                                        <br>
-                                    </header>
-                                    <ul class="divided">
-                                        <li>
-                                            <article class="tweet">
-                                                <a href="https://doi.org/10.1016/j.jbiomech.2013.07.031" target="_blank">Vector field statistical analysis of kinematic and force trajectories.</a>
-                                                <span class="timestamp">721 citations</span>
-                                            </article>
-                                        </li>
-                                        <li>
-                                            <article class="tweet">
-                                                <a href="https://doi.org/10.1080/10255842.2010.527837" target="_blank">One-dimensional statistical parametric mapping in Python.</a>
-                                                <span class="timestamp">771 citations</span>
-                                            </article>
-                                        </li>
-                                        <li>
-                                            <article class="tweet">
-                                                <a href="https://doi.org/10.1016/j.jbiomech.2010.03.008" target="_blank">Generalized n-dimensional biomechanical field analysis using statistical parametric mapping.</a>
-                                                <span class="timestamp">773 citations</span>
-                                            </article>
-                                        </li>
-                                        <li>
-                                            <article class="tweet">
-                                                <a href="https://doi.org/10.18637/jss.v071.i07" target="_blank">RFT1D: Smooth one-dimensional random field upcrossing probabilities in Python</a>
-                                                <span class="timestamp">(Statistical validation) 78 citations</span>
-                                            </article>
-                                        </li>
-                                    </ul>
-                                </section>
-
-                            <!-- Posts -->
-                                <section class="col-4 col-12-mobile">
-                                    <header>
-                                        <h2 class="icon solid fa-rss circled"><span class="label">News</span></h2>
-                                        <h3>News</h3>
-                                        <br>
-                                    </header>
-                                    <ul class="divided">
-                                        <!-- <li>
-                                            <article class="post stub">
-                                                <header>
-                                                    <h3><a href="https://isbs.org/news/94-isbs2020postponed" target="_blank">Jiku Keynote Presentation</a></h3>
-                                                </header>
-                                                <span class="timestamp">ISBS 2022, Liverpool</span>
-                                            </article>
-                                        </li> -->
-                                        <li>
-                                            <article class="post stub">
-                                                <header>
-                                                    <h3><a href="https://faber.kuleuven.be/nl/lll/aanbod/30-08-2021_SPM" target="_blank">Online Workshop</a></h3>
-                                                </header>
-                                                <span class="timestamp">On-demand learning</span>
-                                            </article>
-                                        </li>
-                                        <!-- <li>
-                                            <article class="post stub">
-                                                <header>
-                                                    <h3><a href="https://www.isb-jsb2023.com/scientific-committee/" target="_blank">Scientific Committee Chair</a></h3>
-                                                </header>
-                                                <span class="timestamp">ISB 2023, Fukuoka</span>
-                                            </article>
-                                        </li> -->
-                                        <li>
-                                            <article class="post stub">
-                                                <header>
-                                                    <h3><a href="https://jiku-core.org" target="_blank">Jiku Core</a></h3>
-                                                </header>
-                                                <span class="timestamp">Coming Soon...</span>
-                                            </article>
-                                        </li>
-                                    </ul>
-                                </section>
-
-                            <!-- Photos -->
-                                <section class="col-4 col-12-mobile">
-                                    <header>
-                                        <h2 class="icon solid fa-code circled"><span class="label">Code</span></h2>
-                                        <h3>Code</h3>
-                                        <br>
-                                    </header>
-                                    <div class="row gtr-25">
-                                        <div class="col-6">
-                                            <a class="image fit" href="#banner"><img src="images/segmentation.jpg" alt="" /></a>
-                                        </div>
-                                        <div class="col-6">
-                                            <a class="image fit" href="#banner"><img src="images/referencedata.jpg" alt="" /></a>
-                                        </div>
-                                        <div class="col-6">
-                                            <a class="image fit" href="#banner"><img src="images/graphicalprogramming.jpg" alt="" /></a>
-                                        </div>
-                                        <div class="col-6">
-                                            <a class="image fit" href="#banner"><img src="images/registration.jpg" alt="" /></a>
-                                        </div>
-                                        <div class="col-6">
-                                            <a class="image fit" href="#banner"><img src="images/hypothesistesting.jpg" alt="" /></a>
-                                        </div>
-                                        <div class="col-6">
-                                            <a class="image fit" href="#banner"><img src="images/opencore.jpg" alt="" /></a>
-                                        </div>
-                                    </div>
-                                </section>
-
-                        </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col-12">
-
-                                <!-- Contact -->
-                                    <!-- <section class="contact"> -->
-                                        <!-- <br> -->
-                                        <!-- <footer>
-                                            <a href="mailto:admin@jiku.pro" class="button">Email us</a>
-                                        </footer> -->
-            <jiku-footermin></jiku-footermin>
-
-        </div>
-
-
-
-
-        <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.dropotron.min.js"></script>
-        <script src="assets/js/jquery.scrolly.min.js"></script>
-        <script src="assets/js/jquery.scrollex.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
-        <script src="./jikuelements.js"></script>
-
-    </body>
+	</body>
 </html>

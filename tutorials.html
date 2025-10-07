@@ -1,234 +1,363 @@
 <!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
+	<head>
+		<title>JIKU - Tutorials</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+.button.active {
+  background-color: #e0e0e0;
+  color: #1a237e !important;
+  border: 2px solid #bdbdbd;
+  box-shadow: 0 2px 8px rgba(26,35,126,0.08);
+}
+		</style>
+	</head>
+	<body class="is-preload">
 
-<!-- <style>
-    .popup .popuptext {
-        visibility: hidden;
-        background-color: #555;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 8px 0;
-        z-index: 1;
-        bottom: 125%;
-        left: 50%;
-        margin-left: -80px;
-    }
-    .popup .show {
-        visibility: visible;
-        -webkit-animation: fadeIn 1s;
-        animation: fadeIn 1s;
-    }
-    @-webkit-keyframes fadeIn {
-        from {opacity: 0;}
-        to {opacity: 1;}
-    }
-    @keyframes fadeIn {
-        from {opacity: 0;}
-        to {opacity:1 ;}
-    }
-</style> -->
+		<!-- Wrapper -->
+        <div id="wrapper">
 
+            <!-- Main -->
+            <div id="main">
+                <div class="inner">
 
-    <head>
-        <title>Jiku Tutorials</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-        <!-- <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript> -->
-
-    </head>
-    <body class="homepage is-preload">
-        <div id="page-wrapper">
-
-            
-            <!-- Header -->
-                <div>
-
-
-        <!-- Nav -->
-            <nav id="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li>
-                        <a href="about.html">About</a>
-                        <ul>
-                            <li><a href="about.html#banner" class="scrolly">Company</a></li>
-                            <li><a href="about.html#technical" class="scrolly">Technical Team</a></li>
-                            <li><a href="about.html#corporate" class="scrolly">Corporate Team</a></li>
-                            <li><a href="https://www.spm1d.org/References.html" target="_blank"  class="scrolly">References</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="products.html">Products</a>
-                        <ul>
-                            <li><a href="jikucore.html">Jiku Core</a></li>
-                            <li><a href="products.html#products-jiku-paid">Jiku UI</a></li>
-                            <li><a href="power1d.html">Jiku Power1D</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="tutorials.html">Tutorials</a>
-                        <ul>
-                            <li><a href="tutorials.html#tutorials-power1d">Jiku Power1D</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="support.html">Support</a>
-                        <ul>
-                            <li><a href="support.html#support-free">Free Support</a></li>
-                            <li><a href="support.html#support-consulting">Consulting</a></li>
-                            <li><a href="support.html#support-workshops">Workshops</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-                        
-                        
-            <!-- Banner -->
-                <section id="banner">
-                    <header>
-                        <h2>Tutorials - Jiku Power1D</h2>
-                        
-                        
-                        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/KLOh6oJyqFU?si=oQC1DXA-fqVqY__k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-                        
-                        <div id="player"></div>
-                        <script>
-                        var tag = document.createElement('script');
-                        tag.src = "https://www.youtube.com/player_api";
-                        var firstScriptTag = document.getElementsByTagName('script')[0];
-                        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-                        var done = false;
-                        var player;
-                        function onYouTubePlayerAPIReady() {
-                            player = new YT.Player('player', {
-                              // height: '390',
-                              // width: '640',
-                              videoId: 'OXbIt0cqzfI',
-                              events: {
-                                'onReady': onPlayerReady,
-                                'onStateChange': onPlayerStateChange
-                              }
-                            });
-                        }
-                        function onPlayerReady(evt) {
-                        }
-                        function onPlayerStateChange(evt) {
-                            if (evt.data == YT.PlayerState.PLAYING && !done) {
-                                done = true;
-                            }
-                        }
-                        function stopVideo() {
-                            player.stopVideo();
-                        }
-                        function loadVideo(videoID) {
-                          if(player) { player.loadVideoById(videoID); }
-                        }
-                        </script>
-                        
-                        
-                        
-                        
-
-
+                    <!-- Header -->
+                    <header id="header">
+                        <a href="index.html" class="logo" style="display: flex; align-items: center;">
+                            <img src="images/jiku-core-logo.jpg" alt="Logo" style="height: 2.5em; vertical-align: middle; margin-right: 0.75em;">
+                            <strong style="font-size: 2.2em; letter-spacing: 0.05em;">JIKU</strong>
+                        </a>
                     </header>
-                </section>
-                
-                
 
-            
-            <section>
-            <div class="container">
-            <h3>Getting started</h3>
-            <div class="reel">
-                <a onclick="javascript:loadVideo('OXbIt0cqzfI');" class="button">Overview</a>
-                <a onclick="javascript:loadVideo('olCqdxPrKT8');" class="button">Trial license</a>
-                <a onclick="javascript:loadVideo('NojwMXa_Yr4');" class="button">Purchase license</a>
-                <a onclick="javascript:loadVideo('51bshjT0E_k');" class="button">Importing experimental data</a>
-            </div>
-            </div>
-            </section>
-            
-            
-            <section>
-            <div class="container">
-            <h3>Data Models</h3>
-            <div class="reel">
-                <a onclick="javascript:loadVideo('TEeC8DtO93M');" class="button">Overview</a>
-                <a onclick="javascript:loadVideo('jXesjOpuXDw');" class="button">Default models</a>
-                <a onclick="javascript:loadVideo('F7q2pOJL9go');" class="button">Custom models</a>
-                <a onclick="javascript:loadVideo('lgRVx3xfy5c');" class="button">Templates</a>
-                <a onclick="javascript:loadVideo('sX4YwXu6Nps');" class="button">Importing data</a>
-                <a onclick="javascript:loadVideo('pYCU_IpRLq4');" class="button">Deleting model elements</a>
-            </div>
-            </div>
-            </section>
+                   
 
-            
-            <section>
-            <div class="container">
-            <h3>Analysis</h3>
-            <div class="reel">
-                <a onclick="javascript:loadVideo('9gUZuhxUjao');" class="button">Power mode</a>
-                <a onclick="javascript:loadVideo('Uwmn2HHJ5DI');" class="button">Sample size mode</a>
+                    <!-- Tutorial Section -->
+<section id="tutorial-section">
+    <header class="major">
+        <h1>Tutorials</h1>
+    </header>
+    <div style="max-width: 900px; margin: 0 auto;">
+        <!-- Video window on top -->
+        <div id="video-area" style="width: 100%; max-width: 600px; margin: 0 auto 2em auto;">
+            <iframe id="tutorial-video"
+        src="https://www.youtube.com/embed/OXbIt0cqzfI?enablejsapi=1&rel=0"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                style="width: 100%; height: 340px; border-radius: 0.5em;">
+            </iframe>
+        </div>
+        <!-- Expandable buttons below -->
+        <div>
+            <!-- Getting Started Expandable -->
+            <button id="btn-getting-started" class="button" type="button" style="width: 100%; text-align: left; margin-bottom: 0.5em;">
+                Getting started &#9662;
+            </button>
+            <div id="getting-started-group" style="display: none; margin-bottom: 1em;">
+                <button id="btn-overview" class="button active" type="button" style="margin-bottom: 0.5em;">Overview</button>
+                <button id="btn-trial" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Trial license</button>
+                <button id="btn-purchase-license" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Purchase license</button>
+                <button id="btn-importing-experimental-data" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Importing experimental data</button>
             </div>
+            <!-- Data Models Expandable -->
+            <button id="btn-data-models" class="button" type="button" style="width: 100%; text-align: left; margin-bottom: 0.5em;">
+                Data models &#9662;
+            </button>
+            <div id="data-models-group" style="display: none; margin-bottom: 1em;">
+                <button id="btn-data-model-overview" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Data models overview</button>
+                <button id="btn-default-models" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Default models</button>
+                <button id="btn-custom-models" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Custom models</button>
+                <button id="btn-templates" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Templates</button>
+                <button id="btn-import-data" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Import data</button>
+                <button id="btn-deleting-samples" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Deleting samples</button>
             </div>
-            </section>
-
-
-            <section>
-            <div class="container">
-            <h3>Results</h3>
-            <div class="reel">
-                <a onclick="javascript:loadVideo('VaFwHn3zPgU');" class="button">Main results</a>
-                <a onclick="javascript:loadVideo('JNHjx2lTpjQ');" class="button">Distributions</a>
-                <a onclick="javascript:loadVideo('Box9KK4mHhs');" class="button">Saving figures</a>
-                <a onclick="javascript:loadVideo('2WENDX0MRpk');" class="button">Exporting results</a>
+            <!-- Analysis Expandable -->
+            <button id="btn-analysis" class="button" type="button" style="width: 100%; text-align: left; margin-bottom: 0.5em;">
+                Analysis &#9662;
+            </button>
+            <div id="analysis-group" style="display: none; margin-bottom: 1em;">
+                <button id="btn-power-mode" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Power mode</button>
+                <button id="btn-sample-size-mode" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Sample size mode</button>
             </div>
+            <!-- Results Expandable -->
+            <button id="btn-results" class="button" type="button" style="width: 100%; text-align: left; margin-bottom: 0.5em;">
+                Results &#9662;
+            </button>
+            <div id="results-group" style="display: none; margin-bottom: 1em;">
+                <button id="btn-main-results" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Main results</button>
+                <button id="btn-distribution" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Distribution</button>
+                <button id="btn-saving-figures" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Saving figures</button>
+                <button id="btn-exporting-results" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Exporting results</button>
             </div>
-            </section>
-            
-
-            <section>
-            <div class="container">
-            <h3>Other topics</h3>
-            <div class="reel">
-                <a onclick="javascript:loadVideo('m4Ml9yFDurg');" class="button">Post hoc analysis</a>
-                <a onclick="javascript:loadVideo('rHw_Cq9mbTg');" class="button">Layouts</a>
-                <a onclick="javascript:loadVideo('KLOh6oJyqFU');" class="button">Dark Mode</a>
-                <a onclick="javascript:loadVideo('HEGRChDnsyA');" class="button">Support</a>
+            <!-- Other topics Expandable -->
+            <button id="btn-other-topics" class="button" type="button" style="width: 100%; text-align: left; margin-bottom: 0.5em;">
+                Other topics &#9662;
+            </button>
+            <div id="other-topics-group" style="display: none; margin-bottom: 1em;">
+                <button id="btn-post-hoc-analysis" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Post hoc analysis</button>
+                <button id="btn-layouts" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Layouts</button>
+                <button id="btn-dark-mode" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Dark mode</button>
+                <button id="btn-support" class="button" type="button" style="margin-left: 0.5em; margin-bottom: 0.5em;">Support</button>
             </div>
+        </div>
+    </div>
+</section>
+
+                    <!-- You can add more sections here if needed -->
+
+                </div>
             </div>
-            </section>
-            
 
-            <!-- Footer -->
-            <jiku-footermin></jiku-footermin>
+            <!-- Sidebar -->
+            <div id="sidebar" class="inactive">
+                <div class="inner">
+                    <!-- Menu -->
+                    <nav id="menu">
+                        <header class="major">
+                            <h2>Menu</h2>
+                        </header>
+                        <ul>
+                            <li><a href="index.html">Top</a></li>
+                            <li>
+                                <a href="products.html">Products</a>
+                                <ul style="display: block;">
+                                    <li><a href="index.html" target="_blank" rel="noopener">Jiku Power1D</a></li>
+                                    <li><a href="https://jiku-core.org/" target="_blank" rel="noopener">Jiku Core</a></li>
+                                    <li><a href="https://jiku.pro/products.html" target="_blank" rel="noopener">Jiku UI</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="tutorials.html">Tutorials</a></li>
+                            <li><a href="support.html">Support</a></li>
+                            <li><a href="company.html">Company info</a></li>
+                        </ul>
+                    </nav>
 
-
+                    <!-- Footer -->
+                    <footer id="footer">
+                        <p class="copyright">&copy; Jiku Pro Pty Ltd 2025. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                    </footer>
+                </div>
+            </div>
 
         </div>
 
-
-
-
-
-
-
-
         <!-- Scripts -->
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/jquery.dropotron.min.js"></script>
-            <script src="assets/js/jquery.scrolly.min.js"></script>
-            <script src="assets/js/jquery.scrollex.min.js"></script>
-            <script src="assets/js/browser.min.js"></script>
-            <script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script>
-            <script src="./jikuelements.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+  // Load YouTube IFrame API so we can switch videos without changing iframe history
+  (function loadYouTubeAPI(){
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  })();
 
-    </body>
+  let ytPlayer = null;
+  let ytReady = false;
+  let pendingVideoId = null;
+
+  // Called by YouTube API when it's ready
+  window.onYouTubeIframeAPIReady = function() {
+    ytPlayer = new YT.Player('tutorial-video', {
+      events: {
+        'onReady': function() {
+          ytReady = true;
+          if (pendingVideoId) {
+            ytPlayer.loadVideoById(pendingVideoId);
+            ytPlayer.playVideo();
+            pendingVideoId = null;
+          }
+        }
+      }
+    });
+  };
+
+  function playVideoById(videoId) {
+    if (ytReady && ytPlayer && typeof ytPlayer.loadVideoById === 'function') {
+      ytPlayer.loadVideoById(videoId);
+      ytPlayer.playVideo();
+    } else {
+      // Queue until the API/player is ready to avoid iframe navigations that add history
+      pendingVideoId = videoId;
+    }
+  }
+  // Expand/collapse Getting Started group
+  const btnGettingStarted = document.getElementById('btn-getting-started');
+  const gettingStartedGroup = document.getElementById('getting-started-group');
+  let gettingStartedOpen = false;
+  btnGettingStarted.onclick = function() {
+    gettingStartedOpen = !gettingStartedOpen;
+    gettingStartedGroup.style.display = gettingStartedOpen ? "block" : "none";
+    btnGettingStarted.innerHTML = gettingStartedOpen ? 'Getting started &#9652;' : 'Getting started &#9662;';
+  };
+
+  // Expand/collapse Data Models group
+  const btnDataModels = document.getElementById('btn-data-models');
+  const dataModelsGroup = document.getElementById('data-models-group');
+  let dataModelsOpen = false;
+  btnDataModels.onclick = function() {
+    dataModelsOpen = !dataModelsOpen;
+    dataModelsGroup.style.display = dataModelsOpen ? "block" : "none";
+    btnDataModels.innerHTML = dataModelsOpen ? 'Data models &#9652;' : 'Data models &#9662;';
+  };
+
+  // Expand/collapse Analysis group
+  const btnAnalysis = document.getElementById('btn-analysis');
+  const analysisGroup = document.getElementById('analysis-group');
+  let analysisOpen = false;
+  btnAnalysis.onclick = function() {
+    analysisOpen = !analysisOpen;
+    analysisGroup.style.display = analysisOpen ? "block" : "none";
+    btnAnalysis.innerHTML = analysisOpen ? 'Analysis &#9652;' : 'Analysis &#9662;';
+  };
+
+  // Expand/collapse Results group
+  const btnResults = document.getElementById('btn-results');
+  const resultsGroup = document.getElementById('results-group');
+  let resultsOpen = false;
+  btnResults.onclick = function() {
+    resultsOpen = !resultsOpen;
+    resultsGroup.style.display = resultsOpen ? "block" : "none";
+    btnResults.innerHTML = resultsOpen ? 'Results &#9652;' : 'Results &#9662;';
+  };
+
+  // Expand/collapse Other Topics group
+  const btnOtherTopics = document.getElementById('btn-other-topics');
+  const otherTopicsGroup = document.getElementById('other-topics-group');
+  let otherTopicsOpen = false;
+  btnOtherTopics.onclick = function() {
+    otherTopicsOpen = !otherTopicsOpen;
+    otherTopicsGroup.style.display = otherTopicsOpen ? "block" : "none";
+    btnOtherTopics.innerHTML = otherTopicsOpen ? 'Other topics &#9652;' : 'Other topics &#9662;';
+  };
+
+  // Video buttons
+  const btnOverview = document.getElementById('btn-overview');
+  const btnTrial = document.getElementById('btn-trial');
+  const btnPurchaseLicense = document.getElementById('btn-purchase-license');
+  const btnImportingExperimentalData = document.getElementById('btn-importing-experimental-data');
+  const btnDataModelOverview = document.getElementById('btn-data-model-overview');
+  const btnDefaultModels = document.getElementById('btn-default-models');
+  const btnCustomModels = document.getElementById('btn-custom-models');
+  const btnTemplates = document.getElementById('btn-templates');
+  const btnImportData = document.getElementById('btn-import-data');
+  const btnDeletingSamples = document.getElementById('btn-deleting-samples');
+  const btnPowerMode = document.getElementById('btn-power-mode');
+  const btnSampleSizeMode = document.getElementById('btn-sample-size-mode');
+  const btnDistribution = document.getElementById('btn-distribution');
+  const btnSavingFigures = document.getElementById('btn-saving-figures');
+  const btnExportingResults = document.getElementById('btn-exporting-results');
+  const btnMainResults = document.getElementById('btn-main-results');
+  const btnPostHocAnalysis = document.getElementById('btn-post-hoc-analysis');
+  const btnLayouts = document.getElementById('btn-layouts');
+  const btnDarkMode = document.getElementById('btn-dark-mode');
+  const btnSupport = document.getElementById('btn-support');
+  const tutorialVideo = document.getElementById('tutorial-video');
+
+  function setActive(btn) {
+    [
+      btnOverview, btnTrial, btnPurchaseLicense, btnImportingExperimentalData,
+      btnDataModelOverview, btnDefaultModels, btnCustomModels, btnTemplates, btnImportData, btnDeletingSamples,
+      btnPowerMode, btnSampleSizeMode, btnMainResults, btnDistribution, btnSavingFigures, btnExportingResults, btnPostHocAnalysis,
+      btnLayouts, btnDarkMode, btnSupport
+    ].forEach(b => b && b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+
+  if (btnOverview) btnOverview.onclick = function() {
+    playVideoById("OXbIt0cqzfI");
+    setActive(btnOverview);
+  };
+  if (btnTrial) btnTrial.onclick = function() {
+    playVideoById("olCqdxPrKT8");
+    setActive(btnTrial);
+  };
+  if (btnPurchaseLicense) btnPurchaseLicense.onclick = function() {
+    playVideoById("NojwMXa_Yr4");
+    setActive(btnPurchaseLicense);
+  };
+  if (btnImportingExperimentalData) btnImportingExperimentalData.onclick = function() {
+    playVideoById("51bshjT0E_k");
+    setActive(btnImportingExperimentalData);
+  };
+  if (btnDataModelOverview) btnDataModelOverview.onclick = function() {
+    playVideoById("TEeC8DtO93M");
+    setActive(btnDataModelOverview);
+  };
+  if (btnDefaultModels) btnDefaultModels.onclick = function() {
+    playVideoById("jXesjOpuXDw");
+    setActive(btnDefaultModels);
+  };
+  if (btnCustomModels) btnCustomModels.onclick = function() {
+    playVideoById("F7q2pOJL9go");
+    setActive(btnCustomModels);
+  };
+  if (btnTemplates) btnTemplates.onclick = function() {
+    playVideoById("lgRVx3xfy5c");
+    setActive(btnTemplates);
+  };
+  if (btnImportData) btnImportData.onclick = function() {
+    playVideoById("sX4YwXu6Nps");
+    setActive(btnImportData);
+  };
+  if (btnDeletingSamples) btnDeletingSamples.onclick = function() {
+    playVideoById("pYCU_IpRLq4");
+    setActive(btnDeletingSamples);
+  }
+  if (btnPowerMode) btnPowerMode.onclick = function() {
+    playVideoById("olCqdxPrKT8");
+    setActive(btnPowerMode);
+  };
+  if (btnSampleSizeMode) btnSampleSizeMode.onclick = function() {
+    playVideoById("Uwmn2HHJ5DI");
+    setActive(btnSampleSizeMode);
+  };
+  if (btnDistribution) btnDistribution.onclick = function() {
+    playVideoById("JNHjx2lTpjQ");
+    setActive(btnDistribution);
+  };
+  if (btnSavingFigures) btnSavingFigures.onclick = function() {
+    playVideoById("Box9KK4mHhs");
+    setActive(btnSavingFigures);
+  };
+  if (btnExportingResults) btnExportingResults.onclick = function() {
+    playVideoById("2WENDX0MRpk");
+    setActive(btnExportingResults);
+  };
+  if (btnMainResults) btnMainResults.onclick = function() {
+    playVideoById("VaFwHn3zPgU");
+    setActive(btnMainResults);
+  };
+  if (btnPostHocAnalysis) btnPostHocAnalysis.onclick = function() {
+    playVideoById("m4Ml9yFDurg");
+    setActive(btnPostHocAnalysis);
+  };
+  if (btnLayouts) btnLayouts.onclick = function() {
+    playVideoById("rHw_Cq9mbTg");
+    setActive(btnLayouts);
+  };
+  if (btnDarkMode) btnDarkMode.onclick = function() {
+    playVideoById("KLOh6oJyqFU");
+    setActive(btnDarkMode);
+  };
+  if (btnSupport) btnSupport.onclick = function() {
+    playVideoById("HEGRChDnsyA");
+    setActive(btnSupport);
+  };
+  // Optionally, open Getting Started by default
+  // Optionally, open Getting Started by default
+  btnGettingStarted.click();
+</script>
+	</body>
 </html>
