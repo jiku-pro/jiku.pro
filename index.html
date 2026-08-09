@@ -34,16 +34,23 @@
         <img src="images/jiku-core-logo.jpg" alt="Logo" style="height: 2.5em; vertical-align: middle; margin-right: 0.75em;">
         <strong style="font-size: 2.2em; letter-spacing: 0.05em;">JIKU</strong>
     </a>
+    <br>
 </header>
+
+    <section>
+        <p style="font-size: 16px;"><b>Jiku</b> is an open-source software company specializing in the <b>advanced statistical analysis of continuum data</b>.</p>
+        <p style="font-size: 16px;">Our main products are <a href="https://jiku-core.org/">Jiku Core</a> and <a href="products.html#jiku-ui">Jiku UI</a> (both in development). Our first fully released app is <a href="index.html#power1d">Jiku Power1D</a>.</p>
+    </section>
 
 							<!-- Banner -->
 								<section id="banner">
 									<div class="content">
+                                        <a name="power1d"></a>
 										<header>
 											<h1>Jiku Power1D</h1>
 											<p>Statistical power analysis...<br>for one-dimensional data</p>
 										</header>
-										<p>Power1D is a tool for conducting power analysis on continuous 1D datasets (time series, motion curves, biomechanical signals, etc.). Supports sample size analysis, and effect construction and visualization.</p>
+										<p>Power1D is the first-ever app that conducts power analysis on continuous 1D datasets (time series, waveforms, biomechanical trajectories, etc.). Power1D supports (1) interactive 1D effect construction, (2) flexible noise modeling, (3) sample size analysis, and (4) automated post hoc power analysis of experimental datasets.</p>
 										<ul class="actions">
     <li>
         <a href="https://github.com/jiku-pro/releases-power1d/releases" class="button big" target="_blank" rel="noopener">Download</a>
@@ -60,29 +67,33 @@
 									</div>
 									<span class="image object">
 										<img src="images/1_create_models.gif" alt="" style="width: 100%; height: auto;" />
+										<br>
+                                        <p><b>Step 1</b>: Interactively generate 1D signal and noise geometries <em>(left)</em> to model true 1D effects <em>(right)</em>.</p>
 									</span>
 								</section>
 
 							<!-- Section -->
 								<section id="features-section">
-									<header class="major">
-										<h2>Features</h2>
-									</header>
+                                    <!-- <header class="major">
+                                        <h2>Features</h2>
+                                    </header> -->
 									<div class="posts">
 										<article>
-											<a class="image"><img src="images/4_quick_drop.gif" alt="" /></a>
-											<h3>Drag and drop CSV files</h3>
-											<p>Automated post hoc power analysis is just a drag away.</p>
+											<a class="image"><img src="images/2_conduct_power_analysis.gif" alt="" /></a>
+                                            <!-- <h3>Conduct power analysis</h3> -->
+											<p><b>Step 2</b>: Calculate power by rapidly simulating thousands of datasets.</p>
 										</article>
+                                        
 										<article>
 											<a class="image"><img src="images/3_sample_size_mode.gif" alt="" /></a>
-											<h3>Sample-size mode</h3>
-											<p>Plan experiments and sample sizes needed to detect modeled effects.</p>
+                                            <!-- <h3>Sample-size mode</h3> -->
+											<p><b>Step 3</b>: Calculate sample size needed to achieve a target power.</p>
 										</article>
+
 										<article>
-											<a class="image"><img src="images/2_conduct_power_analysis.gif" alt="" /></a>
-											<h3>Conduct power analysis</h3>
-											<p>Robustly explore 1d power or conduct post hoc power analysis.</p>
+											<a class="image"><img src="images/4_quick_drop.gif" alt="" /></a>
+											<h3>Automated CSV processing</h3>
+											<p>Drag-and-drop a CSV file to automatically conduct post hoc power analysis for a given dataset.</p>
 										</article>
 										
 									
@@ -93,13 +104,13 @@
 					</div>
 
             <!-- Sidebar -->
-            <div id="sidebar" class="inactive">
+            <div id="sidebar" class="toggle">
                 <div class="inner">
                     <!-- Menu -->
                     <nav id="menu">
-                        <header class="major">
+                        <!-- <header class="major">
                             <h2>Menu</h2>
-                        </header>
+                        </header> -->
                         <ul>
                             <li><a href="index.html">Top</a></li>
                             <li>
@@ -112,7 +123,14 @@
                             </li>
                             <li><a href="tutorials.html">Tutorials</a></li>
                             <li><a href="support.html">Support</a></li>
-                            <li><a href="company.html">Company info</a></li>
+                            <li>
+                                <a href="about.html">About</a>
+                                <ul style="display: block;">
+                                    <li><a href="about.html" rel="noopener">Company Info</a></li>
+                                    <li><a href="about.html#team" rel="noopener">Our Team</a></li>
+                                    <li><a href="about.html#publications" rel="noopener">Publications</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
 
@@ -133,7 +151,7 @@
 		<script src="assets/js/main.js"></script>
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
-				document.getElementById("sidebar").classList.add("inactive");
+                document.getElementById("sidebar").classList.add("inactive");
 			});
 		</script>
 
