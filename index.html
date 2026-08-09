@@ -116,9 +116,9 @@
                             <li>
                                 <a href="products.html">Products</a>
                                 <ul style="display: block;">
-                                    <li><a href="index.html" rel="noopener">Jiku Power1D</a></li>
-                                    <li><a href="https://jiku-core.org/" target="_blank" rel="noopener">Jiku Core</a></li>
+                                    <li><a href="products.html#jiku-core">Jiku Core</a></li>
                                     <li><a href="products.html#jiku-ui" rel="noopener">Jiku UI</a></li>
+                                    <li><a href="products.html#jiku-power1d" rel="noopener">Jiku Power1D</a></li>
                                 </ul>
                             </li>
                             <li><a href="tutorials.html">Tutorials</a></li>
@@ -126,7 +126,7 @@
                             <li>
                                 <a href="about.html">About</a>
                                 <ul style="display: block;">
-                                    <li><a href="about.html" rel="noopener">Company Info</a></li>
+                                    <li><a href="about.html#company-info" rel="noopener">Company Info</a></li>
                                     <li><a href="about.html#team" rel="noopener">Our Team</a></li>
                                     <li><a href="about.html#publications" rel="noopener">Publications</a></li>
                                 </ul>
@@ -154,6 +154,14 @@
                 document.getElementById("sidebar").classList.add("inactive");
 			});
 		</script>
+        <!-- <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                if (!localStorage.getItem("isFirstVisit")) {
+                    document.getElementById("sidebar").classList.add("inactive");
+                    localStorage.setItem("isFirstVisit", "false");
+                }
+            });
+        </script> -->
 
 	</body>
 </html>

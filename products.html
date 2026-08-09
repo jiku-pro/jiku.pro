@@ -41,8 +41,8 @@
 
 
               <article>
-                <a href="https://jiku-core.org/" target="_blank" class="image">
-                  <img src="images/jiku-core.jpg" alt="Jiku Core" width="200"/>
+                <a href="https://jiku-core.org/" target="_blank" class="image" name="jiku-core">
+                  <img src="images/jiku-core.jpg" alt="Jiku Core"/>
                 </a>
                 <h2><a href="https://jiku-core.org/">Jiku Core</a></h2>
                 <p>Curated open-source suite of software tools for analyzing continua</p>
@@ -52,7 +52,7 @@
                   <li>Supported by public and private research grants</li>
                   <li>Developed, maintained and curated by Jiku</li>
                   <li>Free for non-commercial use</li>
-                  <li>Documentation available at <a href="https://jiku-core.org/">jiku-core.org</a></li>
+                  <li>Details and documentation will be available at <a href="https://jiku-core.org/">jiku-core.org</a>.</li>
                  </article>
 
               <!-- Product 3 -->
@@ -75,7 +75,7 @@
 
 
               <article>
-                <a href="index.html" class="image">
+                <a href="index.html" class="image" name="jiku-power1d">
                   <img src="images/1_create_models.gif" alt="Power1D demo" />
                 </a>
                 <h2>Jiku Power1D</h2>
@@ -84,7 +84,8 @@
                   <li>Plan experiments and sample sizes</li>
                   <li>Interactively model 1D effect geometries</li>
                   <li>Conduct automated post hoc power analysis</li>
-                  <li>See <a href="tutorials.html" target="_blank">Tutorials</a> for details</li>
+                  <li>See <a href="index.html">top page</a> for an overview</li>
+                  <li>See <a href="tutorials.html">Tutorials</a> for details</li>
                 </ul>
                 <a href="https://github.com/jiku-pro/releases-power1d/releases" class="button big" target="_blank" rel="noopener">Download</a>
                 <a href="https://buy.stripe.com/aFa6oH6YvgIL01dgBd7Zu03" class="button big" target="_blank" rel="noopener">Purchase Power1D</a>
@@ -102,26 +103,33 @@
       </div>
 
             <!-- Sidebar -->
-            <div id="sidebar" class="inactive">
+            <div id="sidebar" class="toggle">
                 <div class="inner">
                     <!-- Menu -->
                     <nav id="menu">
-                        <header class="major">
+                        <!-- <header class="major">
                             <h2>Menu</h2>
-                        </header>
+                        </header> -->
                         <ul>
                             <li><a href="index.html">Top</a></li>
                             <li>
                                 <a href="products.html">Products</a>
                                 <ul style="display: block;">
-                                    <li><a href="index.html" rel="noopener">Jiku Power1D</a></li>
-                                    <li><a href="https://jiku-core.org/" target="_blank" rel="noopener">Jiku Core</a></li>
+                                    <li><a href="products.html#jiku-core">Jiku Core</a></li>
                                     <li><a href="products.html#jiku-ui" rel="noopener">Jiku UI</a></li>
+                                    <li><a href="products.html#jiku-power1d" rel="noopener">Jiku Power1D</a></li>
                                 </ul>
                             </li>
                             <li><a href="tutorials.html">Tutorials</a></li>
                             <li><a href="support.html">Support</a></li>
-                            <li><a href="company.html">Company info</a></li>
+                            <li>
+                                <a href="about.html">About</a>
+                                <ul style="display: block;">
+                                    <li><a href="about.html#company-info" rel="noopener">Company Info</a></li>
+                                    <li><a href="about.html#team" rel="noopener">Our Team</a></li>
+                                    <li><a href="about.html#publications" rel="noopener">Publications</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
 
@@ -140,11 +148,11 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
+    <!-- <script>
       document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("sidebar").classList.add("inactive");
       });
-    </script>
+    </script> -->
 
   </body>
 </html>
